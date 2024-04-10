@@ -5,9 +5,6 @@
       <sourceFolder url="file://$MODULE_DIR$/libr/src" isTestSource="false" packagePrefix="PHPMailer\PHPMailer\" />
       <sourceFolder url="file://$MODULE_DIR$/libr/test" isTestSource="true" packagePrefix="PHPMailer\Test\" />
       <sourceFolder url="file://$MODULE_DIR$/libr/tests" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/libr/spec" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/libr/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/libr/vendor/doctrine/annotations" />
       <excludeFolder url="file://$MODULE_DIR$/libr/vendor/doctrine/deprecations" />

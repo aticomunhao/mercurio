@@ -479,6 +479,17 @@ class Dados
 
         return $this->enviaMensagem();
     }
+    private function ShinePhone()
+    {
+        $this->assunto = utf8_decode('CONFERIR SHINEPHONE');
+        $this->mensagem = utf8_decode('
+                <b>BACKUP:</b> Conferir aplicativo Shinephone <br>
+               
+            ');
+        $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Pomada Código Fonte - (serv02)');
+
+        return $this->enviaMensagem();
+    }
 
     private function pomadaBK()
     {
@@ -588,7 +599,7 @@ class Dados
                 <b>Frequência:</b> Diariamente<br>
                 <b>Início da rotina:</b> 5h<br>
                 <b>Ferramenta:</b> Microsoft SQL Server Management Studio<br>
-                <b>Método:</b> Automático<br>
+                <b>Método:</b> Manual<br>
                 <b>Tempo aproximado de duração da rotina:</b> 5m<br>
                 <b>Número de cópias mantidas:</b> 1<br>
                 <b>Frequência de conferência manual:</b> Diariamente
