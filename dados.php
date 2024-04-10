@@ -999,6 +999,7 @@ class Dados
         $this->mensagemNathan();
         $this->mensagemDavid();
         $this->mensagemWillian();
+        $this->ShinePhone();
     }
 
     function segunda()
