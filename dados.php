@@ -97,6 +97,7 @@ class Dados
 
         return $this->enviaMensagem();
     }
+
     private function mensagemWillian()
     {
         $this->nomeDestinatario = utf8_decode('WILLIAN MARINHO');
@@ -479,13 +480,13 @@ class Dados
 
         return $this->enviaMensagem();
     }
+
     private function ShinePhone()
     {
         $this->assunto = utf8_decode('CONFERIR SHINEPHONE');
         $this->mensagem = utf8_decode('
                 <b>BACKUP:</b> Conferir aplicativo Shinephone <br>
-               
-            ');
+                           ');
         $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Pomada Código Fonte - (serv02)');
 
         return $this->enviaMensagem();
@@ -995,7 +996,7 @@ class Dados
     function mensagemPrivada()
     {
         $this->mensagemMathias();
-        $this->mensagemHumberto();
+       // $this->mensagemHumberto();
         $this->mensagemNathan();
         $this->mensagemDavid();
         $this->mensagemWillian();
