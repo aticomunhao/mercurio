@@ -565,12 +565,12 @@ class Dados
 */
     private function bancoShop9Bs9()
     {
-        $this->assunto = utf8_decode('CONFERIR BACKUP - Banco Shop 9 BS9 - (serv03)');
+        $this->assunto = utf8_decode('CONFERIR BACKUP - Banco Shop 9 BS9 - (VmShop)');
         $this->mensagem = utf8_decode('
                 <b>BACKUP:</b> Banco Shop 9 BS9<br>
-                <b>Origem física:</b> Servidor (serv03)<br>
+                <b>Origem física:</b> Servidor (vmshop)<br>
                 <b>Orígem lógica:</b> Microsfoft SQL Server 2014 - Banco: S9_Real<br>
-                <b>Destino físico:</b> Servidor (serv03)<br>
+                <b>Destino físico:</b> Servidor (vmshop)<br>
                 <b>Destino lógico:</b> "C:\bkp_shop9"<br>
                 <b>Tipo:</b> Completo<br>
                 <b>Frequência:</b> DiariamenteProcedimentos para cópias de segurança (Backup)<br>
@@ -582,20 +582,20 @@ class Dados
                 <b>Número de cópias mantidas:</b> 3<br>
                 <b>Frequência de conferência manual:</b> Diariamente
             ');
-        $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Banco Shop 9 BS9 - (serv03)');
+        $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Banco Shop 9 BS9 - (vmshop)');
 
         return $this->enviaMensagem();
     }
 
     private function bancoShop9BAK()
     {
-        $this->assunto = utf8_decode('CONFERIR BACKUP - Banco Shop 9 BAK - (serv03)');
+        $this->assunto = utf8_decode('CONFERIR BACKUP - Banco Shop 9 BAK - (vmshop)');
         $this->mensagem = utf8_decode('
                 <b>BACKUP:</b> Banco Shop 9 BAK<br>
-                <b>Origem física:</b> Servidor (serv03)<br>
+                <b>Origem física:</b> Servidor (vmshop)<br>
                 <b>Orígem lógica:</b> Microsfoft SQL Server 2014 - Banco: S9_Real<br>
                 <b>Destino físico:</b> Servidor (serv03)<br>
-                <b>Destino lógico:</b> "C:\bkp_shop9\bkp_s9real_intranet"<br>
+                <b>Destino lógico:</b> "C:\bkp_shop9\bkp_S9_Real"<br>
                 <b>Tipo:</b> Completo<br>
                 <b>Frequência:</b> Diariamente<br>
                 <b>Início da rotina:</b> 5h<br>
@@ -605,20 +605,20 @@ class Dados
                 <b>Número de cópias mantidas:</b> 1<br>
                 <b>Frequência de conferência manual:</b> Diariamente
             ');
-        $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Banco Shop 9 BAK - (serv03)');
+        $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Banco Shop 9 BAK - (vmshop)');
 
         return $this->enviaMensagem();
     }
 
     private function bancoShopIntranet()
     {
-        $this->assunto = utf8_decode('CONFERIR BACKUP - Banco Shop 9 Intranet - (serv05)');
+        $this->assunto = utf8_decode('CONFERIR BACKUP - Banco Shop 9 Intranet - (serv13)');
         $this->mensagem = utf8_decode('
                 <b>BACKUP:</b> Banco Shop 9 Intranet<br>
-                <b>Origem física:</b> Servidor (serv03)<br>
-                <b>Orígem lógica:</b> "C:\bkp_shop9\bkp_s9real_intranet"<br>
-                <b>Destino físico:</b> Servidor (serv05)<br>
-                <b>Destino lógico:</b> "C:\BD_Shop9_S9Real"<br>
+                <b>Origem física:</b> Servidor (vmshop)<br>
+                <b>Orígem lógica:</b> "C:\bkp_shop9\bkp_S9_Real"<br>
+                <b>Destino físico:</b> Servidor (serv13)<br>
+                <b>Destino lógico:</b> "C:\bkp_shop9"<br>
                 <b>Tipo:</b> Completo<br>
                 <b>Frequência:</b> Diariamente<br>
                 <b>Início da rotina:</b> 6h<br>
@@ -627,9 +627,9 @@ class Dados
                 <b>Tempo aproximado de duração da rotina:</b><br>
                 <b>Número de cópias mantidas:</b> 1<br>
                 <b>Frequência de conferência manual:</b> Diariamente<br>
-                Obs: O procedimento é feito pelo Servidor "serv05"
+                Obs: O procedimento é feito pelo Servidor "serv13"
             ');
-        $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Banco Shop 9 Intranet - (serv03)');
+        $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Banco Shop 9 Intranet - (serv13)');
 
         return $this->enviaMensagem();
     }
