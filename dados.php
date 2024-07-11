@@ -865,6 +865,28 @@ class Dados
 
         return $this->enviaMensagem();
     }
+    private function BackupBancosDeDadosDaCasa()
+    {
+        $this->assunto = utf8_decode('CONFERIR BACKUP - Postgres SQL 192.168.1.242');
+        $this->mensagem = utf8_decode('
+                <b>BACKUP:</b> Imagem S.O "Active Boot" - (serv06)<br>
+                <b>Origem física:</b>  192.168.1.242(bancos)<br>
+                <b>Orígem lógica:</b> Postgres SQL 192.168.1.242<br>
+                <b>Destino físico:</b> SQL 192.168.1.44(SISDB)<br>
+                <b>Destino lógico:</b>Postgres SQL 192.168.1.44<br>
+                <b>Tipo:</b> Todo o disco do Sistema Operacional<br>
+                <b>Frequência:</b> Diarios<br>
+                <b>Início da rotina:</b> Backup de 10 em 10 minutos<br>
+                <b>Ferramenta:</b> PG_DUMP<br>
+                <b>Método:</b> Automatico<br>
+                <b>Tempo aproximado de duração da rotina:</b> NÃO IDENTIFICADO<br>
+                <b>Número de cópias mantidas:</b> 30 dias<br>
+                <b>Frequência de conferência manual:</b> Diário dias
+            ');
+        $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Postgres SQL 192.168.1.242');
+
+        return $this->enviaMensagem();
+    }
 
     private function imgAcronisServ02()
     {
@@ -1001,6 +1023,7 @@ class Dados
         $this->mensagemDavid();
         $this->mensagemWillian();
         $this->ShinePhone();
+        $this->BackupBancosDeDadosDaCasa();
     }
 
     function segunda()
