@@ -492,6 +492,18 @@ class Dados
         return $this->enviaMensagem();
     }
 
+    public function MensagemArCondicionado()
+    {
+        $this->assunto = utf8_decode('CONFERIR AR CONDICIONADO');
+        $this->mensagem = utf8_decode('
+                <b>ATIVIDADE: </b> Realizar Troca do Ar-condicionado novo para o antigo, vice-versa. <br>
+                <b>Rotina:</b> Ao chegar, o primeiro funcionario troca do novo para o antigo. Ao sair, o ultimo funcionario troca do antigo para o novo <br>
+                           ');
+        $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Pomada Código Fonte - (serv02)');
+
+        return $this->enviaMensagem();
+    }
+
     private function pomadaBK()
     {
         $this->assunto = utf8_decode('CONFERIR BACKUP - Pomada Banco de Dados - (serv02)');
