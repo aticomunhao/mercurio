@@ -881,7 +881,7 @@ class Dados
     {
         $this->assunto = utf8_decode('CONFERIR BACKUP - Postgres SQL 192.168.1.242');
         $this->mensagem = utf8_decode('
-                <b>BACKUP:</b> Imagem S.O "Active Boot" - (serv06)<br>
+                <b>BACKUP:</b> Postgres SQL 192.168.1.242<br>
                 <b>Origem física:</b>  192.168.1.242(bancos)<br>
                 <b>Orígem lógica:</b> Postgres SQL 192.168.1.242<br>
                 <b>Destino físico:</b> SQL 192.168.1.44(SISDB)<br>
@@ -1030,7 +1030,7 @@ class Dados
     function mensagemPrivada()
     {
         $this->mensagemMathias();
-       // $this->mensagemHumberto();
+        // $this->mensagemHumberto();
         $this->mensagemNathan();
         $this->mensagemDavid();
         $this->mensagemWillian();
@@ -1110,13 +1110,9 @@ class Dados
         $this->backupDAC();
     }
 
-    function sabado()
-    {
-    }
+    function sabado() {}
 
-    function domingo()
-    {
-    }
+    function domingo() {}
 
     function janeiro()
     {
@@ -1211,4 +1207,3 @@ class Dados
         $this->arquivosATI();
     }
 }
-      
